@@ -70,6 +70,27 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 ## Для работы с Telegram нужно получить API-ID и API-HASH ##
 ## Для работы с Bot Telegram создать бота в @BotFather и получить BOT_TOKEN ##
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+## Создать файл .env ##
+## Вставить эти поля: ##
+*API_ID=*
+*API_HASH=*
+*PHONE=*
 
+*BOT_TOKEN=*
+
+*DB_NAME=*
+*DB_USER=*
+*DB_PASSWORD=*
+*DB_HOST=localhost*
+*DB_PORT=5433*
+*PORT=3001*
+
+*REQUEST_DELAY=2*
+
+*INPUT_DIR=data/raw*
+*PROCESSED_DIR=data/processed*
+*REVIEW_DIR=data/to_review*
+*MODEL_NAME=distilbert-base-multilingual-cased*
+## Заполнять своими данными без пробела после знака "=" и никакими символами после ##
 ## Вставить их и номер телефона в соответствующие поля файла .env ##
 ## Вставить данные подключения к БД в соответствующие поля файла .env ##
