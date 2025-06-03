@@ -1,0 +1,30 @@
+# Поисковые запросы для GitHub
+queries:
+  - "password filename:.env"
+  - "api_key filename:config.js"
+  - "token filename:settings.py"
+  - "secret_key"
+  - "private_key"
+
+headers:
+  User-Agent: Mozilla/5.0
+
+# Кол-во страниц GitHub-поиска для каждой query
+max_pages: 2
+
+# Задержки для обхода (в секундах)
+delay_between_requests: 3    # между скачиваниями файлов
+delay_between_pages: 5       # между страницами поиска
+
+# Имя файла для сохранения результатов (в github_parser_result/)
+output_file: "github_leaks.json"
+
+# Регулярные выражения для классификации содержимого
+regex_patterns:
+  credentials: "(?i)(password|passwd|pwd|api[_-]?key|access[_-]?token)[\\s:=\\'\\\"]+[A-Za-z0-9_\\-]{6,}"
+  personal: "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+"
+  financial: "\\b(?:\\d[ -]*?){13,16}\\b"
+  health: "(?i)(blood|medical|diagnosis|patient)"
+  intellectual_property: "(?i)(proprietary|confidential|internal use only|nda)"
+
+  

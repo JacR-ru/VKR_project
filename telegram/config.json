@@ -1,0 +1,13 @@
+{
+  "channels": [
+    "@dataleak",
+    "@silentcrow_chat"
+  ],
+  "threads": [
+    {
+      "channel": "@LegionServiceNewsGroup",
+      "thread_id": 2210
+    }
+  ],
+  "request_delay": 1.0
+}

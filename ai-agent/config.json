@@ -1,0 +1,18 @@
+[
+    {
+        "id": "web_parser",
+        "path": "diplom/web_parser/web_parser_result/leaks.json"
+    },
+    {
+        "id": "telegram_parser",
+        "path": "diplom/telegram/telegram_parser/telegram_parser_result/leaks_telegram.json"
+    },
+    {
+        "id": "paste",
+        "path": "diplom/paste_parser/paste_result/paste_result.json"
+    },
+    {
+        "id": "github_parser",
+        "path": "diplom/github_parser/github_parser_result/github_leaks.json"
+    }
+]

@@ -1,0 +1,1620 @@
+{
+  "source": "diplom/web_parser/web_parser_result/leaks.json",
+  "timestamp": "2025-06-03T03:04:05+0000",
+  "entries": [
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 665389,
+      "content": "Как проверить пароли на утечку - Рамблер/технологии и тренды В СМИ и Telegram-каналах регулярно появляются новости об утечках данных миллионов пользователей.",
+      "link": "https://sci.rambler.ru/safety/54561636-kak-proverit-paroli-na-utechku/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 2581,
+      "content": "тами; акт определения уровня защищенности персональных данных — документ, устанавливающий степень защиты данных; акт оценки вреда субъектам персональных данных — расчет потенциального ущерба в случае утечки данных; модель угроз безопасности персональных данных — описание возможных рисков для информационной системы.",
+      "link": "https://www.insales.ru/collection/doc-chasto-zadavaemye-voprosy/product/personalnye-dannye-informatsiya-dlya-vladeltsev-internet-magazinov",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 903080,
+      "content": "Минцифры ответило на вопрос, как утечка данных россиян коснулась «Госуслуг» Skip to main navigation Россия Все Севастополь Крым Россия СВО В\tмире Политика Реклама Минцифры ответило на вопрос, как утечка данных россиян коснулась «Госуслуг» В Минцифры подтвердили факт взлома данных «Ростелекома».",
+      "link": "https://sevastopol.su/news/mincifry-otvetilo-na-vopros-kak-utechka-dannykh-rossiyan-kosnulas-gosuslug",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 807578,
+      "content": "Мошенники слили пароли банковских аккаунтов более 31 тысячи австралийцев - Газета.Ru | Новости Названы болезни, повышающие риск развития депрессии 20:55 Авиация НАТО и ВМС Эстонии попытались захватить",
+      "link": "https://www.gazeta.ru/tech/news/2025/04/30/25670414.shtml",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 109334,
+      "content": "Только при выполнении этих требований владелец информации может рассчитывать на то, что утечка данных не останется безнаказанной.",
+      "link": "https://rosco.su/consult/dogovor-nda-chto-eto-takoe-i-zachem-on-nuzhen/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 417402,
+      "content": "Утечка данных — последние и свежие новости сегодня и за 2025 год на iz.",
+      "link": "https://iz.ru/tag/utechka-dannykh",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 951246,
+      "content": "При этом оно не должно снимать с них ответственность за утечки.",
+      "link": "https://omskmedia.su/news/2007546/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 21550,
+      "content": "0 Данные 90% населения России утекли в открытый доступ Пётр Аркадьевич 17 января 2025 11:57 Нужно принимать более строгое законодательство по части утечки данных, чтобы неповадно было.",
+      "link": "https://politinform.su/index.php?do=lastcomments",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 31348,
+      "content": "телефонов Источник 21 января 2025 У «Ростелекома» произошла утечка данных — клиентам рекомендовано сменить пароли Количество: 154 тыс.",
+      "link": "https://infobezopasnost.ru/blog/data-breach-russia/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 763654,
+      "content": "Утечка данных: чем опасна, что делать, последствия | РБК Тренды Общество Утечка данных: чем опасна и что делать, если данные слили Фото: Unsplash 21 января 2024 года «Ростелеком» сообщил об утечке данных у одного из подрядчиков.",
+      "link": "https://trends.rbc.ru/trends/social/62bc5de69a794727c5a36f55",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 195581,
+      "content": "Поэтому ключевая задача - не просто зафиксировать факт утечки, а выстроить устойчивую систему выявления и реагирования на потенциальные угрозы на ранних стадиях\", - отметил Немкин.",
+      "link": "https://news.ati.su/news/2025/04/30/naibolshee-kolichestvo-utechek-dannyh-v-rf-svjazano-s-logisticheskimi-kompanijami-881130/?utm_source=mainpage&utm_content=news_sidebar",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 854340,
+      "content": "IT-специалисты «Лацерты» оказывают широкий спектр услуг по предотвращению утечки информации и несанкционированных атак и обеспечивают заказчику надёжную корпоративную среду, находя разумный баланс между мобильностью сотрудников и информационной безопасностью бизнеса.",
+      "link": "https://lacerta.su/it-solution/it-security.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 745580,
+      "content": "елям Главная Каталог Статьи Скачать Обратная связь Архив новостей Доставка Дополнительно : Порекомендовать :Распечатать :Добавить в избранное Главная » Новости » новости Введение оборотных штрафов за утечку персональных данных с 30 мая 2025 года РКН вводит крупные оборотные штрафы за утечку персональных данных с 30 мая 2025 года.",
+      "link": "https://www.netsecret.su/index.php?area=1&p=news&newsid=296",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 563890,
+      "content": "Компания Keenetic сообщила об утечке данных пользователей — Хакер Найти: Временная скидка 60% на годовую подписку ! Рекомендуем почитать: Хакер #312.",
+      "link": "https://xakep.ru/2025/03/21/keenetic-leak/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 526069,
+      "content": "Минусы хранения персональных данных в электронном виде: риск утечки ПДн; необходимость в создании системы информационной безопасности с учетом требований ФСБ и ФСТЭК.",
+      "link": "https://grandawards.ru/blog/obrabotka-personalnyh-dannyh/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 874955,
+      "content": "Что делать при утечке номера телефона или адреса электронной почты | ОТР IT-эксперт Мясоедов объяснил, как удалить личные данные из слитых баз компаний https://otr-online.",
+      "link": "https://otr-online.ru/articles/chistim-bazy-chto-delat-tem-kto-stal-zhertvoi-utechki-dannyh-u-kompanii-266592.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 835347,
+      "content": "Эксперты по безопасности предполагают, что утечка произошла из-за хакерской атаки на компанию Twilio, отвечающую за двухфакторную аутентификацию пользователей Steam.",
+      "link": "https://overclockers.ru/blog/MaximumImpact/show/224195/U-Steam-proizoshla-masshtabnaya-utechka-dannyh-pol-zovatelej-eksperty-sovetujut-obnovit-paroli",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 765475,
+      "content": "й звонок» Как отключить «Безопасный звонок» Защитник+ Как подключить «Защитник+» Как отключить «Защитник+» Главная Защитник Отслеживание утечек личных данных На сайт Защитник Защитник Как отслеживать утечки данных Если ваши данные оказались под угрозой, на виджете Защитник на главном экране приложения Мой МТС вы увидите надпись «Произошла утечка личных данных» Как проверить утечки 1.",
+      "link": "https://support.mts.ru/zaschitnik/otslezhivanie-utechek/kak-otslezhivat-utechki-dannykh",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 379033,
+      "content": "Мне показалось, или в голосе Регины и правда прозвучала угроза? – И расслабься, – добавила она, поймав мой опасливый взгляд на её чемодане.",
+      "link": "https://flibusta.su/book/388319-nadlezasij-podhod/read/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 867353,
+      "content": "Резервные копии защищают от потери данных, а их шифрование при передаче и хранении предотвращает утечки и несанкционированный доступ, что особенно важно для конфиденциальной информации.",
+      "link": "https://jet.su/services/sistemy-rezervnogo-kopirovaniya-i-vosstanovleniya-dannykh/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 569478,
+      "content": "Злоумышленники рассылают письма от имени Центра защиты информации и специальной связи ФСБ, предупреждая о якобы произошедшей утечке данных и требуя содействия.",
+      "link": "https://goo.su/iZcYge",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 117720,
+      "content": "Утечки данных в России Реклама на этой странице 2025/02/06 15:07:51 Утечки данных в России Основная статья: Утечки данных Содержание Закон о персональных данных №152-ФЗ Утечки данных в отраслях Утечки данных в госсекторе России Утечки данных из банков России 2025: В Новосибирске трое работников ФНС продали данные о 40 тыс.",
+      "link": "https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%A3%D1%82%D0%B5%D1%87%D0%BA%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 105036,
+      "content": "Сегодня Роскомнадзор направил запрос в 8 скидочных сервисов по поводу утечки данных.",
+      "link": "https://www.forbes.ru/sobytiya-slideshow/rynki/87785-9-sekretnyh-baz-dannyh-dlya-vseh-zhelayushchih",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 16989,
+      "content": "Опасность утечки данных: что делать, если ваши данные попали в сеть? Опасность утечки данных: что делать, если ваши данные попали в сеть? 31.",
+      "link": "https://www.mobilis.ru/news/opasnost-utechki-dannykh-chto-delat-esli-vashi-dannye-popali-v-set/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 244332,
+      "content": "нно источниками анализируемых данных для нас служат различные сообщества, занимающиеся восстановлением паролей из хешей, теневые форумы и Telegram-каналы, где в открытый доступ выкладываются массовые утечки.",
+      "link": "https://dlbi.ru/six-billion-passwords-2024/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 764556,
+      "content": "2025, 14:15 Объем утечек в России снизился – боты-пробивщики скупают все данные Сервис разведки уязвимостей и утечек данных DLBI проанализировал российские утечки данных, произошедшие в первом квартале 2025 года.",
+      "link": "https://plusworld.ru/articles/?tags=%D0%A3%D0%A2%D0%95%D0%A7%D0%9A%D0%90+%D0%94%D0%90%D0%9D%D0%9D%D0%AB%D0%A5",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 363150,
+      "content": "Почему произошла утечка данных в «Ростелекоме» Реклама в «Ъ» www.",
+      "link": "https://www.kommersant.ru/doc/7445101",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 487937,
+      "content": "лезная кухня Кино и сериалы Главная Новости Индустрия В Сеть утекла база аккаунтов \"Стима\", срочно меняйте пароли и подключайте двухфакторку Zan Сегодня в 13:57 6999 14 В Сети появилась информация об утечке данных Steam: в даркнете за $5000 (около 400 тыс.",
+      "link": "https://www.goha.ru/v-set-utekla-baza-akkauntov-stime-srochno-menyajte-paroli-i-podklyuchajte-dvuhfaktorku-lrVG7M",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 720032,
+      "content": "Такие подсчеты приводит экспертно-аналитический центр (ЭАЦ) ГК InfoWatch в своем исследовании « Россия: утечки информации ограниченного доступа, 2023-2024 ».",
+      "link": "https://www.infowatch.ru/company/presscenter/news/kolichestvo-slitykh-personalnykh-dannykh-v-dve-tysyachi-dvadtsat-chetvertom-godu-vyroslo-na-tret",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 958116,
+      "content": "Каталог  —  Boheme — Эксклюзивные решения для ванной комнаты Главная >> Каталог Категория Смесители Аксессуары Санфаянс Душевые гарнитуры Полотенцесушители Мебель Раковины Слив и канализация Инсталляц",
+      "link": "https://boheme.su/catalog/?arrFilter_46_861398833=Y&arrFilter_24_1852864628=Y&set_filter=&defaultattr=24_270",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 761283,
+      "content": "сновного меню сайта Переход на главную страницу сайта 8 800 300-92-97 Прайс на рекламу Заказать рекламу PR-служба Рекламные форматы Главная → Блоги → Лаборатория Касперского → Как проверить данные на утечки и взломы → Лаборатория Касперского Лаборатория Касперского Подписаться 17 мар.",
+      "link": "https://www.klerk.ru/blogs/laboratoria_kasperskogo/630092/?srsltid=AfmBOoomcCbaKU0ARn-Brx3St_zznWlsT08EDUDgHYjIdB8-69y5KpO7",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 459779,
+      "content": "о? Главная / Другое / Каковы основные причины компрометации учетных данных? Вопрос для Нейро 3 апреля #Компрометация #УчетныеДанные #БезопасностьДанных #ИнформационнаяБезопасность #КомпьютерныеАтаки #УтечкаДанных Каковы основные причины компрометации учетных данных? Нейро На основе 5 источников 1 habr.",
+      "link": "https://ya.ru/neurum/c/drugoe/q/kakovy_osnovnye_prichiny_komprometacii_uchetnyh_5ccc4059",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 227150,
+      "content": "Хотя это на 28 сливов меньше, чем за три месяца прошлого года, утечки остаются одной из главных киберугроз для российского бизнеса.",
+      "link": "https://cisoclub.ru/podmorozhennye-slivy-publichnyh-utechek-baz-dannyh-rossijskih-kompanij-stalo-menshe-iz-za-blokirovok-v-telegram/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 380672,
+      "content": "Другими словами, это утечка реквизитов карты, с помощью которых другие лица могут снять ваши деньги.",
+      "link": "https://fpa.ru/info/chto-takoe-komprometacija-bankovskoj-karty/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 53379,
+      "content": "ЦБ выпустит серебряную памятную монету к 100-летию «Артека» Интернет и технологии Эксперт дал россиянам советы, чтобы избежать утечки персональных данных Эксперт дал россиянам советы, чтобы избежать утечки персональных данных 2024-12-08T10:00:01+03:00 2024-12-08T10:00:00+03:00 Новости Интернет и технологии Эксперт дал россиянам советы, чтобы избежать утечки персональных данных Партийный переулок, д.",
+      "link": "https://iz.ru/1803227/2024-12-08/ekspert-dal-rossianam-sovety-ctoby-izbezat-utecki-personalnyh-dannyh",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 834226,
+      "content": "О чём говорят утечки данных | РВС Перейти к основному содержанию Главная О чём говорят утечки данных Очередная масштабная утечка данных огромной британской торговой (и не только) сети Co-op вызывает ощущение дежавю, настолько шаблонно действуют владельцы бизнеса, потерявшего огромный массив чувствительной информации.",
+      "link": "https://rvs.su/statia/o-chyom-govoryat-utechki-dannyh",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 712660,
+      "content": "Компрометация банковских карт с помощью Android-смартфонов с NFC. Как не стать жертвой Новости ОПРОС Текущий ПЛАС-опрос Результаты опросов О ПЛАС-опросах Ритейл Эксперты Банки Крипто Финтех Журнал СВЕ",
+      "link": "https://plusworld.ru/articles/64211/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 27087,
+      "content": "Утечка данных в Steam: что произошло, как защитить аккаунт | РБК Life Слушать Фото: Cfoto / Keystone Press Agency / Global Look Press В Steam произошла утечка данных, сообщает портал XDA.",
+      "link": "https://www.rbc.ru/life/news/682492da9a7947e5f8570f16",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 117720,
+      "content": "Утечки данных в России Реклама на этой странице 2025/02/06 15:07:51 Утечки данных в России Основная статья: Утечки данных Содержание Закон о персональных данных №152-ФЗ Утечки данных в отраслях Утечки данных в госсекторе России Утечки данных из банков России 2025: В Новосибирске трое работников ФНС продали данные о 40 тыс.",
+      "link": "https://goo.su/bt4Rs",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 187611,
+      "content": "На утечку обратила внимание компания по кибербезопасности Underdark AI.",
+      "link": "https://daily.afisha.ru/news/98037-dannye-89-mln-akkauntov-steam-utekli-v-set-polzovatelyam-rekomenduyut-smenit-parol/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 103983,
+      "content": "сокого риска 45% учащихся переходят по ссылкам из писем «от преподавателя» 33% школьников вводят пароли ВК на поддельных сайтах конкурсов В 2023 году 12 вузов РФ потеряли доступ к научным базам из-за утечки данных Решением становится контроль интернет доступа в школе с фильтрацией опасного контента.",
+      "link": "https://berezniki.su/news/chto-takoe-fishing-polnoe-rukovodstvo-po-ugrozam-i-zashhite",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 720115,
+      "content": "Новая роль поможет эффективно выявлять операционные риски и неоптимальные настройки, предотвращать утечки данных и реализовывать корпоративные политики безопасности.",
+      "link": "http://spbit.su/news/n234975/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 853468,
+      "content": "Форумы Общение Слив фото и видео 18+ JavaScript отключён.",
+      "link": "https://hard-tm.su/threads/76776/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 769299,
+      "content": "2025, 18:50 Лента новостей Подмосковья СМИ Хакеры выложили на продажу базу данных с данными 89 млн пользователей Steam Хакеры выложили на продажу базу данных с данными 89 млн пользователей Steam За утечку требуют $5 тысяч, пишет ТАСС со ссылкой на XDA .",
+      "link": "https://news-balashiha.ru/society/2025/05/14/202354.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": true,
+        "leak": false
+      },
+      "recommendations": [
+        "Масштабировать меры реагирования.",
+        "Увеличить ресурсы для анализа."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 268960,
+      "content": "А если произошла утечка, сообщите об этом в ведомство, заполнив форму на сайте или произвольно в бумажном виде (п.",
+      "link": "https://www.arbitr-praktika.ru/article/2431-peredacha-personalnyh-dannyh-tretim-litsam",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 226643,
+      "content": "Откуда утекают данные, и кто виновен в этом? Откуда утекают данные, и кто виновен в этом? Ежедневно количество новостей об утечках конфиденциальных данных из российских компаний растет.",
+      "link": "https://www.everytag.ru/everytag_analytics",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 567263,
+      "content": "Охлаждаемая пристенная витрина Freor PLUTON - holod-market.su - Екатеринбург Карта сайта Перейти в корзину Товаров: На сумму: Ваша корзина пуста Комплексное оснащение и поставка профессионального обор",
+      "link": "https://holod-market.su/proizvoditeli/vynosnoy-holod/freor/holodilnye-gorki-freor/ohlazhdaemaya-pristennaya-vitrina-freor-pluton/?srsltid=AfmBOoqI41fatrSnCWSsYxqBJ1MC-z6kh8JFc8mDffV1L8qhQidr4gu-",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": true,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Заблокировать скомпрометированные счета.",
+        "Настроить мониторинг транзакций.",
+        "Связаться с банками.",
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 13433,
+      "content": "распространения в интернете баз данных (БД), согласно данным Роскомнадзора, Со слов заместителя главы Роскомнадзора Милоша Вагнера , из 710 млн записей персональных данных россиян, 500 млн – это одна утечка.",
+      "link": "https://www.cnews.ru/news/top/2025-01-16_v_2024_godu_proizoshlo_135_utechek",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": true,
+        "leak": true
+      },
+      "recommendations": [
+        "Масштабировать меры реагирования.",
+        "Увеличить ресурсы для анализа.",
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 64168,
+      "content": "Утечка конфиденциальных данных на текущий момент не подтверждена.",
+      "link": "https://www.novostiitkanala.ru/news/detail.php?ID=182959",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 988028,
+      "content": "На новых смартфонах нашли крадущий аккаунты в Telegram вирус Skip to main navigation Россия Все Севастополь Крым Россия СВО В\tмире Политика Реклама На новых смартфонах нашли крадущий аккаунты в Telegr",
+      "link": "https://sevastopol.su/news/na-novykh-smartfonakh-nashli-kraduschiy-akkaunty-v-telegram-virus",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": true,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Заблокировать скомпрометированные счета.",
+        "Настроить мониторинг транзакций.",
+        "Связаться с банками в Россия.",
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 81283,
+      "content": "Утечка данных 89 млн аккаунтов Steam: что известно и кто в зоне риска Полина Ицкова #Общество 14 мая 2025,\n                        13:37 287 0 0 Утечка данных 89 млн аккаунтов Steam: что известно и кто в зоне риска 14 мая 2025,\n                        13:37 287 0 0 В Даркнете появилась информация об утечке данных более 89 миллионов аккаунтов Steam.",
+      "link": "https://tvchelny.ru/news/obshchestvo/utecka-dannyx-89-mln-akkauntov-steam-cto-izvestno-i-kto-v-zone-riska",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": true,
+        "leak": true
+      },
+      "recommendations": [
+        "Масштабировать меры реагирования.",
+        "Увеличить ресурсы для анализа.",
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 573618,
+      "content": "Чаще всего, по оценкам экспертов F6, публичные утечки происходят в сфере ретейла.",
+      "link": "https://www.comnews.ru/content/238942/2025-04-23/2025-w17/1008/kolichestvo-slitykh-baz-dannykh-snizilos-30",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 546393,
+      "content": "Утечка мозгов… Единственный, кто не утёк — Барнард.",
+      "link": "https://posmotreli.su/index.php/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%82%D0%B8%D0%BD%D0%B5%D0%BD%D1%82",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 352135,
+      "content": "Сравнения Прочее О проекте StartUp Hub Контакты Реклама Главное Avanpost 4 марта #Статьи Меняем правила «Игры в кибербезопасность»: как устроено интеллектуальное управление привилегированным доступом Утечки данных, связанные с компрометацией привилегированных сессий, становятся одной из самых дорогостоящих угроз в области кибербезопасности.",
+      "link": "https://cisoclub.ru/menjaem-pravila-igry-v-kiberbezopasnost-kak-ustroeno-intellektualnoe-upravlenie-privilegirovannym-dostupom/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 30752,
+      "content": "Он предположил , что утечка может быть результатом компрометации базы данных компании Twilio, поставщика облачных коммуникаций, чьи услуги используются для отправки кодов двухфакторной аутентификации.",
+      "link": "https://www.kommersant.ru/doc/7714974",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 299445,
+      "content": "Как защитить информацию о карте после её компрометации? - Библиотека Нейро Примеры ответов Нейро на вопросы из разных сфер Что такое Нейро? Главная / Другое / Как защитить информацию о карте после её ",
+      "link": "https://ya.ru/neurum/c/drugoe/q/kak_zaschitit_informaciyu_o_karte_posle_ee_17f6f0bb",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 164347,
+      "content": "Несоблюдение базовых правил может привести к утечке информации и компрометации аккаунта.",
+      "link": "https://npr.su/kak-pravilno-polzovatsya-tokenom.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 227150,
+      "content": "Хотя это на 28 сливов меньше, чем за три месяца прошлого года, утечки остаются одной из главных киберугроз для российского бизнеса.",
+      "link": "https://safe.cnews.ru/news/line/2025-04-22_podmorozhennye_slivy_publichnyh?p=homecnewsmob",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 559885,
+      "content": "– Утечки из ГосИС происходят гораздо реже, чем из коммерческих.",
+      "link": "https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%9E%D0%B1%D0%B5%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 743570,
+      "content": "Они сливают информацию о кошельках, платформах, протоколах взаимодействия.",
+      "link": "https://www.ueba.su/index.php/k2-blog/media-about-us",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 673423,
+      "content": "У DeepSeek большая утечка данных.",
+      "link": "https://cyber.sports.ru/tech/blogs/3295770.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 149940,
+      "content": "Слив базы данных Альфа-Банка все еще доступен в интернете и данные пользователей в свободном доступе – отзыв о Альфа-Банке от \"user-717820330869\" | Банки.",
+      "link": "https://www.banki.ru/services/responses/bank/response/12127502/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 519837,
+      "content": "Утечки данных операторов связи в России Реклама на этой странице 2025/01/21 15:27:20 Утечки данных операторов связи в России Содержание 2025: Утечка данных из систем «Ростелекома» произошла, возможно, по вине подрядчика 2024: Произошла утечка данных 198 тыс.",
+      "link": "https://www.tadviser.ru/index.php/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F:%D0%A3%D1%82%D0%B5%D1%87%D0%BA%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2_%D1%81%D0%B2%D1%8F%D0%B7%D0%B8_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 227661,
+      "content": ", думаю дольше использовать не стоит \"устает\" сливал уже черное.",
+      "link": "https://shop.ravenol.su/motornoe-maslo-ravenol-fds-5w-30/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 90330,
+      "content": "При этом в рейтинге по утечкам персональных данных наша страна поднялась с седьмого на пятое место.",
+      "link": "https://www.comnews.ru/content/238391/1010/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 606802,
+      "content": "От фишинга к компрометации данных: новый вектор атак на АСУ ТП Безопасность Новости Обзоры События IT@Work Реклама Блокчейн Искусственный интеллект Open Source Интернет вещей Big Data/Аналитика Цифров",
+      "link": "https://www.itweek.ru/themes/detail.php?ID=231747",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 434235,
+      "content": "LockBit снова взломали: дамп базы, переговоры и пароли в открытом виде Екатерина Быстрова 12 Мая 2025 - 08:29 Домашние пользователи Вирусы-вымогатели Вирусы-шифровальщики Атаки на сайты Взлом сайтов Утечки информации Умышленные утечки информации Кража данных .",
+      "link": "https://www.anti-malware.ru/news/2025-05-12-111332/45991",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 149186,
+      "content": "До сих пор непонятно, как произошла утечка.",
+      "link": "https://www.iphones.ru/iNotes/srochno-smenite-parol-v-steam-hakery-ukrali-dannye-89-mln-polzovateley-i-uzhe-prodayut-vsyu-bazu",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 765475,
+      "content": "й звонок» Как отключить «Безопасный звонок» Защитник+ Как подключить «Защитник+» Как отключить «Защитник+» Главная Защитник Отслеживание утечек личных данных На сайт Защитник Защитник Как отслеживать утечки данных Если ваши данные оказались под угрозой, на виджете Защитник на главном экране приложения Мой МТС вы увидите надпись «Произошла утечка личных данных» Как проверить утечки 1.",
+      "link": "https://l.mts.ru/0utechki",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 610011,
+      "content": "С января по август 2022 года в России произошли утечки 197 млн записей персональных данных и платежной информации.",
+      "link": "https://www.ugpr.ru/article/2100-ugolovnaya-otvetstvennost-za-personalnye-dannye",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": true,
+        "leak": false
+      },
+      "recommendations": [
+        "Масштабировать меры реагирования.",
+        "Увеличить ресурсы для анализа."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 723453,
+      "content": "Ниже приведем самые популярные способы: Элементарная кража данных о ПИН-коде .",
+      "link": "https://fcbg.ru/blokirovka-karty-po-komprometacii",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 216581,
+      "content": "❓ Компрометация карты Внимание! В вашем браузере отключено выполнение JavaScript. Возможно неоптимальное отображения ряда элементов сайта и недоступность удобного функционала. Список вопросов Ответ да",
+      "link": "https://www.banki.ru/services/questions-answers/question/745130/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 642266,
+      "content": "Компрометация сертификата ключа электронной подписи \\ 2025-2024-2023 год \\ Акты, образцы, формы, договоры  \\ КонсультантПлюс Обновите Ваш браузер Текущая версия Вашего браузера не поддерживается. Скач",
+      "link": "https://www.consultant.ru/law/podborki/komprometaciya_sertifikata_klyucha_jelektronnoj_podpisi/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 732027,
+      "content": "Создать тему Открыть меню Слив фото и видео 18+ Форум, посвященный сливу фото и видео девушек, блогерш и инстаграм-моделей.",
+      "link": "https://hard-tm.su/forums/sliv_foto/page-101",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 409177,
+      "content": "Ответственность Штрафы за нарушения в работе с персональными данными с 30 мая 2025 года: утечка в интернет и неуведомление РКН В мае 2025 года в несколько раз увеличатся действующие штрафы за нарушение правил работы с персональными данными граждан.",
+      "link": "https://buh.ru/articles/shtrafy-za-personalnye-dannye-s-30-maya-2025-goda-utechka-v-internet-neuvedomlenie-rkn-o-nachale-obr.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 943527,
+      "content": "рбанк Автор user-828320822180 Ростовская обл, г Азов Создаю 3ее обращение вам! 29 января были заблокированы карты сбербанка по причина компрометация , сбербанк онлайн ответил причина блокировки из-за утечки данных (повторюсь никому ничего не давала , ничего не теряла ) .",
+      "link": "https://www.banki.ru/services/questions-answers/question/710336/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 150021,
+      "content": "Утечка персональных данных \\ КонсультантПлюс Вход в систему Главная Документы Утечка персональных данных Обзор: \"Новые штрафы за утечку персональных данных и другие нарушения при работе с ними: закон опубликован\"\n(КонсультантПлюс, 2024) У течка персональных данных В случае незаконной передачи информации о людях в количестве от 1 тыс.",
+      "link": "https://www.consultant.ru/document/cons_doc_LAW_491552/5e790c9a8ebbd30b7cfbaf9edd24c547bdbdb704/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 903310,
+      "content": "Первым о ней сообщил сервис поиска утечек и мониторинга даркнета DLBI, после факт взлома частично и сам оператор, заявив, что в утечке может быть повинен один из его подрядчиков.",
+      "link": "https://safe.cnews.ru/news/top/2025-01-21_rostelekom_prizval_abonentov",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 980871,
+      "content": "Устройства HSM способны выполнять криптографические операции внутри самого модуля, что уменьшает риски, связанные с утечкой ключей при их использовании вне защищенной среды [15].",
+      "link": "https://www.lastmile.su/journal/article/10613",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 958116,
+      "content": "Каталог  —  Boheme — Эксклюзивные решения для ванной комнаты Главная >> Каталог Категория Смесители Аксессуары Санфаянс Душевые гарнитуры Полотенцесушители Мебель Раковины Слив и канализация Инсталляц",
+      "link": "https://boheme.su/catalog/?arrFilter_46_167560777=Y&arrFilter_24_1852864628=Y&set_filter=&defaultattr=24_270",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 2152,
+      "content": "Изображение: Wiz Research Исследователи из Wiz Research отметили, что обнаружение утечки заняло всего несколько минут: база данных ClickHouse, связанная с DeepSeek, оказалась полностью открытой.",
+      "link": "https://skillbox.ru/media/code/v-set-utekla-baza-dannyh-kitayskoy-neyroseti-deepseek/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 204629,
+      "content": "России небезопасна | ForPost-Технологии Половина заменителей мобильных приложений в России небезопасна 14-05-2025 11:05 Почти половина программ, заменивших приложения для iOS, уязвимы с точки зрения утечки данных их пользователей.",
+      "link": "https://tech.sevastopol.su/2025/05/14/polovina-zamenitelej-mobilnyh-prilozhenij-v-rossii-nebezopasna/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 366776,
+      "content": "Утечка данных – новости и статьи по тегу | Forbes.",
+      "link": "https://www.forbes.ru/tegi/utechka-dannyh",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 771467,
+      "content": "Сводит к минимуму нецелевое использование транспорта, отклонения от графика работы, слив ГСМ.",
+      "link": "https://www.sorus.su/1c/logistika-transport/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 513757,
+      "content": "Что делать пользователям прямо сейчас 89 миллионов аккаунтов Steam выставлены на продажу Первым внимание к утечке привлёк пользователь X (бывший Twitter) под ником MellowOnline1.",
+      "link": "https://itzine.ru/news/games-news/v-set-utekli-89-millionov-akkauntov-steam-proverte-svoi-paroli.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 944208,
+      "content": "Внутренние угрозы: злоумышленные или непреднамеренные действия сотрудников, приводящие к утечке данных или нарушению безопасности.",
+      "link": "https://e-news.su/kompyuternye-obzory-i-poleznosti/514409-chto-takoe-informacionnaja-bezopasnost-kompanii-osnovnye-ugrozy-i-reshenija-dlja-zaschity.html",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 858941,
+      "content": "Пост хакера об утечке Источник: Bleeping Computer По словам независимого игрового журналиста MellowOnline1, который занимается отслеживанием мошенничества и других проблем в Steam, предположил, что утечка связана с платформой для рассылок Twilio, которую используют для аутентификации.",
+      "link": "https://hi-tech.mail.ru/news/127013-hakery-slili-89-mln-zapisej-s-dannymi-polzovatelej-steam-chto-izvestno/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": true
+      },
+      "recommendations": [
+        "Расследовать источник утечки и усилить кибербезопасность."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 442933,
+      "content": "Кибератаки, оценка компрометации и защита бизнеса Свежее Новости Мероприятия Статьи Обзоры Отчеты Интервью Видео Блоги Утечки Уязвимости Дайджесты Обучение Вакансии Сравнения Прочее О проекте StartUp ",
+      "link": "https://cisoclub.ru/kak-raspoznat-ugrozu-esli-ona-skryvaetsja-za-predelami-vidimosti/",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    },
+    {
+      "date": "2025-06-03T03:04:05+0000",
+      "message_id": 909048,
+      "content": "База данных китайской нейросети DeepSeek оказалась в открытом доступе | РБК Life Фото: Anthony Kwan / Getty Images Эксперты из фирмы по облачной безопасности Wiz Research заявили, что обнаружили утечку конфиденциальной информации из базы данных китайской нейросети DeepSeek.",
+      "link": "https://www.rbc.ru/life/news/679b32609a7947536994a238",
+      "analysis": {
+        "credentials": false,
+        "personal": false,
+        "financial": false,
+        "health": false,
+        "intellectual_property": false,
+        "volume": false,
+        "leak": false
+      },
+      "recommendations": [
+        "Провести анализ для уточнения действий."
+      ]
+    }
+  ]
+}
