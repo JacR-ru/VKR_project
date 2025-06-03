@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Система мониторинга утечек данных</title>
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { primary: "#4361ee", secondary: "#3f37c9" },
+          borderRadius: { button: "8px" }
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+</head>
+<body class="min-h-screen">
+  <div class="flex h-screen overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r flex flex-col relative">
+      <div class="p-6 font-bold text-lg text-primary">Система мониторинга и выявления фактов утечек</div>
+      <nav class="flex-1 px-4 space-y-2">
+        <a href="#" class="flex items-center space-x-2 p-2 text-gray-700 hover:bg-gray-100 rounded">
+          <i class="ri-dashboard-line text-lg"></i><span>Обзор</span>
+        </a>
+        <button id="settings-btn" class="flex items-center space-x-2 p-2 text-gray-700 hover:bg-gray-100 rounded w-full text-left">
+          <i class="ri-settings-3-line text-lg"></i><span>Настройки</span>
+        </button>
+        <button id="add-incident-btn" class="flex items-center space-x-2 p-2 text-gray-700 hover:bg-gray-100 rounded w-full text-left mt-2">
+          <i class="ri-add-line text-lg"></i><span>Добавить утечку</span>
+        </button>
+      </nav>
+      <div class="p-4 border-t text-sm text-gray-500">Информация предоставлена исключительно в ознакомительных целях. Собрана с открытых ресурсов и является отображением размещенных в них объявлений, постов, записей и обсуждений.</div>
+      <div class="p-4 border-t text-sm text-gray-500">© 2025</div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col">
+      <!-- Header -->
+      <header class="bg-white border-b shadow-sm p-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white shadow rounded-lg p-4">
+            <p class="text-sm text-gray-500">Утечек сегодня</p>
+            <p id="stat-today" class="text-xl font-semibold">0</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <p class="text-sm text-gray-500">Средних</p>
+            <p id="stat-processing" class="text-xl font-semibold">0</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <p class="text-sm text-gray-500">Критических</p>
+            <p id="stat-critical" class="text-xl font-semibold">0</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <p class="text-sm text-gray-500">За месяц</p>
+            <p id="stat-month" class="text-xl font-semibold">0</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Body -->
+      <main class="flex-1 overflow-y-auto bg-gray-50 p-6">
+        <div class="grid grid-cols-12 gap-6">
+          <!-- Левая основная часть -->
+          <div class="col-span-8 space-y-6">
+            <!-- График активности -->
+            <div class="bg-white rounded shadow-sm p-5 border">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-semibold">Активность утечек</h3>
+                <div class="space-x-2">
+                  <button data-period="week" class="period-btn px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded button">Неделя</button>
+                  <button data-period="month" class="period-btn px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded button">Месяц</button>
+                  <button data-period="year" class="period-btn px-3 py-1.5 text-sm bg-gray-100 text-gray-700 rounded button">Год</button>
+                </div>
+              </div>
+              <div id="activity-chart" class="w-full h-72"></div>
+            </div>
+
+            <!-- Таблица инцидентов -->
+            <div class="bg-white rounded shadow-sm border">
+              <div class="p-5 border-b flex flex-wrap justify-between items-center space-y-2 md:space-y-0">
+                <h3 class="text-lg font-semibold">Последние инциденты</h3>
+                <div class="flex flex-wrap items-center space-x-2">
+                  <input id="search" type="text" placeholder="Поиск..." class="border rounded px-3 py-2 text-sm" />
+                  <select id="filter-type" class="border rounded px-3 py-2 text-sm">
+                    <option value="">Все типы</option>
+                    <option value="Пароли">Пароли</option>
+                    <option value="Персональные данные">Персональные данные</option>
+                    <option value="Финансовые данные">Финансовые данные</option>
+                    <option value="Контактные данные">Контактные данные</option>
+                    <option value="Комбинированное">Комбинированное</option>
+                  </select>
+                  <select id="filter-status" class="border rounded px-3 py-2 text-sm">
+                    <option value="">Все статусы</option>
+                    <option value="Критический">Критический</option>
+                    <option value="В обработке">В обработке</option>
+                    <option value="Средний">Средний</option>
+                    <option value="Закрыт">Закрыт</option>
+                    <option value="Новый">Новый</option>
+                  </select>
+                </div>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                  <thead><tr class="bg-gray-50">
+                    <th class="px-5 py-3 text-left text-xs font-medium text-gray-500 uppercase">Компания</th>
+                    <th class="px-5 py-3 text-left text-xs font-medium text-gray-500 uppercase">Тип</th>
+                    <th class="px-5 py-3 text-left text-xs font-medium text-gray-500 uppercase">Источник</th>
+                    <th class="px-5 py-3 text-left text-xs font-medium text-gray-500 uppercase">Дата</th>
+                    <th class="px-5 py-3 text-left text-xs font-medium text-gray-500 uppercase">Статус</th>
+                    <th class="px-5 py-3"></th>
+                  </tr></thead>
+                  <tbody id="incident-table-body" class="divide-y divide-gray-100"></tbody>
+                </table>
+              </div>
+              <div class="p-5 border-t flex justify-between items-center">
+                <p id="pagination-info" class="text-sm text-gray-500"></p>
+                <div class="flex items-center space-x-2">
+                  <button id="prev-page" class="p-2 disabled:opacity-50" disabled><i class="ri-arrow-left-s-line text-xl"></i></button>
+                  <input id="page-input" type="number" min="1" class="w-16 border rounded px-2 py-1 text-sm" placeholder="Страница">
+                  <button id="next-page" class="p-2 disabled:opacity-50" disabled><i class="ri-arrow-right-s-line text-xl"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Правая колонка -->
+          <div class="col-span-4 space-y-6">
+            <!-- Диаграмма типов -->
+            <div class="bg-white rounded shadow-sm p-5 border">
+              <h3 class="text-lg font-semibold mb-4">Типы утечек</h3>
+              <div id="leak-types-chart" class="w-full h-64"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Выпадающее окно настроек -->
+  <div id="settings-panel" class="hidden fixed top-16 left-72 bg-white shadow-lg rounded p-4 w-80 z-50 border">
+    <h2 class="text-lg font-semibold mb-2">Настройки сканирования</h2>
+    <!-- Периодичность -->
+    <label class="block mb-3">
+      <span class="text-sm font-medium text-gray-700">Периодичность сканирования:</span>
+      <select id="scan-frequency" class="mt-1 block w-full border border-gray-300 rounded px-3 py-2">
+        <option value="hourly">Каждый час</option>
+        <option value="daily">Раз в день</option>
+        <option value="weekly">Раз в неделю</option>
+      </select>
+    </label>
+    <!-- Модули -->
+    <span class="text-sm font-medium text-gray-700">Задействованные модули:</span>
+    <div class="space-y-1 mt-2 mb-4">
+      <label class="flex items-center"><input type="checkbox" value="webparser" class="module-toggle mr-2"> Web Parser</label>
+      <label class="flex items-center"><input type="checkbox" value="GitHubparser" class="module-toggle mr-2"> GitHub Parser</label>
+      <label class="flex items-center"><input type="checkbox" value="pastebinparser" class="module-toggle mr-2"> Pastebin Parser</label>
+      <label class="flex items-center"><input type="checkbox" value="telegramparser" class="module-toggle mr-2"> Telegram Parser</label>
+    </div>
+    <div class="flex justify-end space-x-2">
+      <button id="save-settings" class="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700">Сохранить</button>
+      <button id="close-settings" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">Отмена</button>
+    </div>
+  </div>
+
+  <!-- Модальное окно добавления утечки -->
+  <div id="add-incident-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-60">
+    <div class="bg-white rounded shadow-lg w-96 p-6 relative">
+      <h2 class="text-lg font-semibold mb-4">Добавить новую утечку</h2>
+      <form id="add-incident-form" class="space-y-4">
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Компания:</span>
+          <input type="text" name="company_name" class="mt-1 block w-full border rounded px-3 py-2" required />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Тип утечки:</span>
+          <select name="type" class="mt-1 block w-full border rounded px-3 py-2" required>
+            <option value="" disabled selected>Выберите тип утечки</option>
+            <option value="Аутентификационные данные">Аутентификационные данные</option>
+            <option value="Персональные данные">Персональные данные</option>
+            <option value="Финансовые данные">Финансовые данные</option>
+            <option value="Контактные данные">Контактные данные</option>
+            <option value="Комбинированное">Комбинированное</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Источник информации:</span>
+          <select name="source" class="mt-1 block w-full border rounded px-3 py-2" required>
+            <option value="" disabled selected>Выберите источник</option>
+            <option value="Форум открытой сети Интернет">Форум открытой сети Интернет</option>
+            <option value="Telegram-канал">Telegram-канал</option>
+            <option value="СМИ">СМИ</option>
+            <option value="Paste-сервис">Paste-сервис</option>
+            <option value="GitHub-репозиторий">GitHub-репозиторий</option>
+            <option value="DarkNet">DarkNet</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Дата обнаружения:</span>
+          <input type="datetime-local" name="discovery_date" class="mt-1 block w-full border rounded px-3 py-2" required />
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Статус:</span>
+          <select name="status" class="mt-1 block w-full border rounded px-3 py-2" required>
+            <option value="Новый">Новый</option>
+            <option value="В обработке">В обработке</option>
+            <option value="Средний">Средний</option>
+            <option value="Критический">Критический</option>
+            <option value="Закрыт">Закрыт</option>
+          </select>
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-gray-700">Описание:</span>
+          <textarea name="description" rows="3" class="mt-1 block w-full border rounded px-3 py-2"></textarea>
+        </label>
+        <div class="flex justify-end space-x-2">
+          <button type="submit" class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Сохранить</button>
+          <button type="button" id="cancel-add-incident" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Отмена</button>
+        </div>
+      </form>
+      <button id="close-add-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold">×</button>
+    </div>
+  </div>
+
+  <!-- Модальное окно для подробностей утечки -->
+  <div id="incident-details-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-60">
+    <div class="bg-white rounded shadow-lg w-96 p-6 relative">
+      <h2 class="text-lg font-semibold mb-4">Подробности утечки</h2>
+      <div id="incident-details-content" class="space-y-4">
+        <p><strong>Компания:</strong> <span id="detail-company"></span></p>
+        <p><strong>Тип:</strong> <span id="detail-type"></span></p>
+        <p><strong>Источник:</strong> <span id="detail-source"></span></p>
+        <p><strong>Дата:</strong> <span id="detail-date"></span></p>
+        <p><strong>Статус:</strong> <span id="detail-status"></span></p>
+        <p><strong>Описание:</strong> <span id="detail-description" class="block text-sm text-gray-700"></span></p>
+        <div id="recommendations" class="mt-4">
+          <h3 class="text-md font-semibold mb-2">Рекомендации</h3>
+          <div>
+            <h4 class="font-semibold">Базовый уровень</h4>
+            <ul id="rec-basic" class="list-disc pl-5 mb-3 text-sm text-gray-700"></ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Информационная безопасность (ИБ)</h4>
+            <ul id="rec-is" class="list-disc pl-5 text-sm text-gray-700"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end space-x-2 mt-4">
+        <button id="download-report" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Выгрузить отчет</button>
+        <button id="close-details-modal" class="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400">Закрыть</button>
+      </div>
+      <button id="close-details-x" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-xl font-bold">×</button>
+    </div>
+  </div>
+
+<script>
+  const API = 'http://localhost:3001/api';
+  let currentPage = 1;
+  let itemsPerPage = 5;
+  let totalPages = 1;
+
+  // Форматирование даты для оси X в зависимости от выбранного периода
+  function formatDate(dateStr, period) {
+    const date = new Date(dateStr);
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+    const monthNames = [
+      'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+      'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+    ];
+
+    if (period === 'year') {
+      return monthNames[date.getMonth()];
+    } else if (period === 'month' || period === 'week') {
+      return `${day}.${month}`;
+    }
+    return dateStr; // на всякий случай
+  }
+
+  async function loadStats() {
+    try {
+      const res = await fetch(`${API}/stats`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const stats = await res.json();
+      document.getElementById('stat-today').textContent = stats.today || 0;
+      document.getElementById('stat-processing').textContent = stats.processing || 0;
+      document.getElementById('stat-critical').textContent = stats.critical || 0;
+      document.getElementById('stat-month').textContent = stats.month || 0;
+    } catch (error) {
+      console.error('Ошибка загрузки статистики:', error);
+    }
+  }
+
+  async function fetchIncidents(page = 1, search = '', type = '', status = '') {
+    try {
+      const url = new URL(`http://localhost:3001/api/incidents`);
+      url.searchParams.append('page', page);
+      url.searchParams.append('limit', 5);
+      if (search) url.searchParams.append('search', search);
+      if (type) url.searchParams.append('type', type);
+      if (status) url.searchParams.append('status', status);
+      url.searchParams.append('sort', 'discovery_date');
+      url.searchParams.append('order', 'desc');
+      const res = await fetch(url.toString());
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const response = await res.json();
+      response.data = response.data.map(incident => ({
+        ...incident,
+        discovery_date: new Date(incident.discovery_date).toLocaleDateString('ru-RU', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric'
+        })
+      }));
+      return response;
+    } catch (error) {
+      console.error('Ошибка при получении инцидентов:', error);
+      return { data: [], pagination: { page: 1, totalPages: 1 } };
+    }
+  }
+
+  async function loadIncidents(page = 1) {
+    const search = document.getElementById('search').value.trim();
+    const type = document.getElementById('filter-type').value;
+    const status = document.getElementById('filter-status').value;
+    const { data, pagination } = await fetchIncidents(page, search, type, status);
+    currentPage = pagination.page;
+    totalPages = pagination.totalPages;
+    const tbody = document.getElementById('incident-table-body');
+    tbody.innerHTML = '';
+    data.forEach(incident => {
+      const companyName = incident.company_name ? incident.company_name.trim() : '—';
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td class="px-5 py-3 text-sm">${companyName}</td>
+        <td class="px-5 py-3 text-sm">${incident.type}</td>
+        <td class="px-5 py-3 text-sm">${incident.source}</td>
+        <td class="px-5 py-3 text-sm">${incident.discovery_date}</td>
+        <td class="px-5 py-3 text-sm">${incident.status}</td>
+        <td class="px-5 py-3 text-sm text-right">
+          <button class="text-blue-600 hover:underline text-sm details-btn" data-id="${incident.id}">Подробнее</button>
+        </td>
+      `;
+      tbody.appendChild(row);
+    });
+    document.getElementById('pagination-info').textContent = `Страница ${pagination.page} из ${pagination.totalPages}`;
+    updatePaginationControls();
+    initDetailsButtons();
+  }
+
+  function updatePaginationControls() {
+    const prevBtn = document.getElementById('prev-page');
+    const nextBtn = document.getElementById('next-page');
+    const pageInput = document.getElementById('page-input');
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+    pageInput.value = currentPage;
+    pageInput.max = totalPages;
+    prevBtn.onclick = () => loadIncidents(currentPage - 1);
+    nextBtn.onclick = () => loadIncidents(currentPage + 1);
+    pageInput.onkeypress = (e) => {
+      if (e.key === 'Enter') {
+        let targetPage = parseInt(pageInput.value);
+        if (isNaN(targetPage) || targetPage < 1) targetPage = 1;
+        if (targetPage > totalPages) targetPage = totalPages;
+        loadIncidents(targetPage);
+      }
+    };
+  }
+
+  async function loadCharts(period = 'week') {
+    try {
+      const res = await fetch(`${API}/activity?period=${period}`);
+      const activityData = await res.json();
+      const formattedDates = activityData.map(item => formatDate(item.date, period));
+      const counts = activityData.map(item => item.count);
+      const actChart = echarts.init(document.getElementById('activity-chart'));
+      actChart.setOption({
+        tooltip: {
+          trigger: 'axis',
+          formatter: params => {
+            const p = params[0];
+            return `${p.axisValue}<br/>Утечек: ${p.data}`;
+          }
+        },
+        xAxis: {
+          type: 'category',
+          data: formattedDates,
+          axisLabel: { rotate: 45 }
+        },
+        yAxis: { type: 'value' },
+        series: [{ type: 'line', data: counts, smooth: true }]
+      });
+      const res2 = await fetch(`${API}/leak-types`);
+      const typeData = await res2.json();
+      const typeChart = echarts.init(document.getElementById('leak-types-chart'));
+      typeChart.setOption({
+        tooltip: {
+          trigger: 'item',
+          formatter: '{b}: {d}%'
+        },
+        legend: { show: false },
+        series: [{
+          type: 'pie',
+          radius: '70%',
+          avoidLabelOverlap: false,
+          label: { show: false },
+          labelLine: { show: false },
+          emphasis: {
+            scale: true,
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.3)'
+            },
+            label: { show: false }
+          },
+          data: typeData.map(t => ({
+            value: t.count,
+            name: t.type
+          }))
+        }]
+      });
+    } catch (error) {
+      console.error('Ошибка загрузки графиков:', error);
+    }
+  }
+
+  function initSettingsPanel() {
+    const btn = document.getElementById('settings-btn');
+    const panel = document.getElementById('settings-panel');
+    const closeBtn = document.getElementById('close-settings');
+    const saveBtn = document.getElementById('save-settings');
+    btn.addEventListener('click', () => {
+      panel.classList.toggle('hidden');
+    });
+    closeBtn.addEventListener('click', () => {
+      panel.classList.add('hidden');
+    });
+    saveBtn.addEventListener('click', async () => {
+      const frequency = document.getElementById('scan-frequency').value;
+      const modules = Array.from(document.querySelectorAll('.module-toggle:checked'))
+                          .map(cb => cb.value);
+      try {
+        const response = await fetch(`${API}/settings`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ frequency, modules })
+        });
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        console.log('Настройки сохранены:', { frequency, modules });
+        panel.classList.add('hidden');
+      } catch (error) {
+        console.error('Ошибка сохранения настроек:', error);
+        alert('Ошибка при сохранении настроек. Попробуйте позже.');
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (!panel.contains(event.target) && !btn.contains(event.target)) {
+        panel.classList.add('hidden');
+      }
+    });
+  }
+
+  function initAddIncidentModal() {
+    const btnOpen = document.getElementById('add-incident-btn');
+    const modal = document.getElementById('add-incident-modal');
+    const btnClose = document.getElementById('close-add-modal');
+    const btnCancel = document.getElementById('cancel-add-incident');
+    const form = document.getElementById('add-incident-form');
+    btnOpen.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      form.reset();
+    });
+    btnClose.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+    btnCancel.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const companyName = formData.get('company_name').trim();
+      const type = formData.get('type');
+      const source = formData.get('source');
+      const rawDate = formData.get('discovery_date');
+      const status = formData.get('status');
+      const description = formData.get('description').trim() || null;
+      if (!companyName) {
+        alert('Поле "Компания" не может быть пустым.');
+        return;
+      }
+      if (!type) {
+        alert('Поле "Тип утечки" не может быть пустым.');
+        return;
+      }
+      if (!source) {
+        alert('Поле "Источник информации" не может быть пустым.');
+        return;
+      }
+      if (!rawDate) {
+        alert('Поле "Дата обнаружения" не может быть пустым.');
+        return;
+      }
+      let discoveryDate = null;
+      try {
+        discoveryDate = new Date(rawDate).toISOString();
+      } catch (err) {
+        alert('Некорректная дата обнаружения. Пожалуйста, проверьте формат.');
+        return;
+      }
+      const payload = {
+        company_name: companyName,
+        type: type,
+        source: source,
+        discovery_date: discoveryDate,
+        status: status,
+        description: description
+      };
+      try {
+        console.log('Отправляемый payload:', payload);
+        const res = await fetch(`${API}/incidents`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) {
+          const errorData = await res.json();
+          throw new Error(errorData.error || `Ошибка сервера: ${res.status}`);
+        }
+        console.log('Утечка успешно добавлена:', payload);
+        modal.classList.add('hidden');
+        loadIncidents(1);
+      } catch (err) {
+        console.error('Ошибка при добавлении утечки:', err);
+        alert(`Ошибка при добавлении утечки: ${err.message}. Попробуйте позже.`);
+      }
+    });
+  }
+
+  async function fetchIncidentDetails(id) {
+    try {
+      const res = await fetch(`${API}/incidents/${id}`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const incident = await res.json();
+      return incident;
+    } catch (error) {
+      console.error('Ошибка при получении подробностей утечки:', error);
+      return null;
+    }
+  }
+
+  function initDetailsButtons() {
+    const buttons = document.querySelectorAll('.details-btn');
+    const modal = document.getElementById('incident-details-modal');
+    const closeBtn = document.getElementById('close-details-modal');
+    const closeX = document.getElementById('close-details-x');
+    const downloadBtn = document.getElementById('download-report');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const id = btn.getAttribute('data-id');
+        const incident = await fetchIncidentDetails(id);
+        if (incident) {
+          // Заполнение основных данных
+          document.getElementById('detail-company').textContent = incident.company_name || '—';
+          document.getElementById('detail-type').textContent = incident.type || '—';
+          document.getElementById('detail-source').textContent = incident.source || '—';
+          document.getElementById('detail-date').textContent = new Date(incident.discovery_date).toLocaleDateString('ru-RU', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          });
+          document.getElementById('detail-status').textContent = incident.status || '—';
+          document.getElementById('detail-description').textContent = incident.description || 'Описание отсутствует';
+
+          // Заполнение рекомендаций, добавьте этот код
+          const recBasic = document.getElementById('rec-basic');
+          const recIB = document.getElementById('rec-is');
+
+          // Очистим предыдущие данные
+          recBasic.innerHTML = '';
+          recIB.innerHTML = '';
+
+          if (incident.recommendations) {
+            if (incident.recommendations['Базовый'] && incident.recommendations['Базовый'].length > 0) {
+              incident.recommendations['Базовый'].forEach(rec => {
+                const li = document.createElement('li');
+                li.textContent = rec;
+                recBasic.appendChild(li);
+              });
+            } else {
+              recBasic.innerHTML = '<li class="italic text-gray-400">Рекомендации отсутствуют</li>';
+            }
+
+            if (incident.recommendations['ИБ'] && incident.recommendations['ИБ'].length > 0) {
+              incident.recommendations['ИБ'].forEach(rec => {
+                const li = document.createElement('li');
+                li.textContent = rec;
+                recIB.appendChild(li);
+              });
+            } else {
+              recIB.innerHTML = '<li class="italic text-gray-400">Рекомендации отсутствуют</li>';
+            }
+          } else {
+            recBasic.innerHTML = '<li class="italic text-gray-400">Рекомендации отсутствуют</li>';
+            recIB.innerHTML = '<li class="italic text-gray-400">Рекомендации отсутствуют</li>';
+          }
+          
+          downloadBtn.onclick = () => {
+            const content = `Подробности утечки\n\n` +
+                            `Компания: ${incident.company_name || '—'}\n` +
+                            `Тип: ${incident.type || '—'}\n` +
+                            `Источник: ${incident.source || '—'}\n` +
+                            `Дата: ${new Date(incident.discovery_date).toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' })}\n` +
+                            `Статус: ${incident.status || '—'}\n` +
+                            `Описание: ${incident.description || 'Описание отсутствует'}`;
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `incident_${id}_report.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          };
+          modal.classList.remove('hidden');
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    closeX.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadStats();
+    loadIncidents();
+    loadCharts();
+    initSettingsPanel();
+    initAddIncidentModal();
+    document.querySelectorAll('.period-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('bg-primary', 'text-white'));
+        btn.classList.add('bg-primary', 'text-white');
+        loadCharts(btn.dataset.period);
+      });
+    });
+    document.getElementById('search').addEventListener('input', () => loadIncidents(1));
+    document.getElementById('filter-type').addEventListener('change', () => loadIncidents(1));
+    document.getElementById('filter-status').addEventListener('change', () => loadIncidents(1));
+  });
+</script>
+</body>
+</html>
